@@ -6,6 +6,10 @@
   font-family: Segoe UI, 'Roboto', sans-serif !important;
   font-weight: 400; }
 
+a {
+  text-decoration: none;
+  color: #666666; }
+
 .container {
   display: block;
   width: 70%;
@@ -13,11 +17,10 @@
 
 .header {
   position: relative;
-  background-color: #666666;
+  background-color: #3FADA8;
   display: block;
-  height: 85px;
-  color: #ffffff;
-  border-bottom: 1px solid #fff; }
+  height: 90px;
+  color: #ffffff; }
   .header img {
     position: absolute;
     display: block;
@@ -37,7 +40,9 @@
 
 .menu {
   width: 100%;
-  font-weight: 200; }
+  font-weight: 200;
+  color: #333333 !important;
+  /*DROP DOWN */ }
   .menu ul {
     cursor: context-menu; }
   .menu ul li {
@@ -45,51 +50,67 @@
     display: inline-block;
     width: 20%;
     font-size: 16px;
-    color: #fff;
-    text-align: center;
-    background: #f6290c;
-    background: -moz-linear-gradient(top, #f6290c 0%, #333333 0%, #4d4d4e 40%, #666666 62%, #808080 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6290c), color-stop(0%, #333333), color-stop(40%, #4d4d4e), color-stop(62%, #666666), color-stop(100%, #808080));
-    background: -webkit-linear-gradient(top, #f6290c 0%, #333333 0%, #4d4d4e 40%, #666666 62%, #808080 100%);
-    background: -o-linear-gradient(top, #f6290c 0%, #333333 0%, #4d4d4e 40%, #666666 62%, #808080 100%);
-    background: -ms-linear-gradient(top, #f6290c 0%, #333333 0%, #4d4d4e 40%, #666666 62%, #808080 100%);
-    background: linear-gradient(to bottom, #f6290c 0%, #333333 0%, #4d4d4e 40%, #666666 62%, #808080 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6290c', endColorstr='#808080', GradientType=0 ); }
+    text-align: center; }
   .menu ul li:nth-child(n+1) {
-    box-shadow: 1px 0px 1px 1px #fff; }
+    box-shadow: 0px 0px 1px 0px #666666; }
   .menu ul li ul {
+    background-color: rgba(51, 51, 51, 0.65);
     display: none;
     position: absolute;
     z-index: 50; }
     .menu ul li ul li {
+      box-shadow: none;
       font-size: 14px;
       font-weight: 100;
       padding: 1px 10px;
-      width: 180px !important; }
+      width: 180px !important;
+      color: white; }
+    .menu ul li ul a {
+      color: white; }
   .menu ul li:hover {
-    background: #666666;
-    background: -moz-linear-gradient(top, #666666 0%, #808080 0%, #808080 0%, #666666 38%, #4d4d4e 60%, #333333 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #666666), color-stop(0%, #808080), color-stop(0%, #808080), color-stop(38%, #666666), color-stop(60%, #4d4d4e), color-stop(100%, #333333));
-    background: -webkit-linear-gradient(top, #666666 0%, #808080 0%, #808080 0%, #666666 38%, #4d4d4e 60%, #333333 100%);
-    background: -o-linear-gradient(top, #666666 0%, #808080 0%, #808080 0%, #666666 38%, #4d4d4e 60%, #333333 100%);
-    background: -ms-linear-gradient(top, #666666 0%, #808080 0%, #808080 0%, #666666 38%, #4d4d4e 60%, #333333 100%);
-    background: linear-gradient(to bottom, #666666 0%, #808080 0%, #808080 0%, #666666 38%, #4d4d4e 60%, #333333 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#333333', GradientType=0 ); }
+    background-color: rgba(51, 51, 51, 0.8); }
+    .menu ul li:hover a {
+      color: white !important; }
   .menu ul li:hover ul {
     display: block; }
 
-a {
-  text-decoration: none;
-  color: #fff; }
-
 .theBody {
+  padding: none;
+  cursor: context-menu;
   width: 100%;
-  height: 800px; }
+  height: 1000px; }
+  .theBody .q_links_box {
+    text-align: center;
+    display: inline-block;
+    width: 20%;
+    height: 40%;
+    float: right; }
+    .theBody .q_links_box div:nth-child(1) {
+      margin-top: 10px;
+      margin-left: 10%;
+      width: 80%;
+      background-color: #3FADA8;
+      color: white;
+      border-top-left-radius: 80px; }
+    .theBody .q_links_box .quickLinks {
+      width: 80%;
+      background-color: #666666;
+      margin-left: 10%;
+      height: 200px;
+      border-bottom-right-radius: 30px; }
+  .theBody div:nth-child(3), .theBody div:nth-child(4), .theBody div:nth-child(5) {
+    width: 27%;
+    height: 300px;
+    background-color: rgba(51, 51, 51, 0.65);
+    display: inline-block;
+    margin-left: -2px;
+    padding: 0;
+    border: none; }
 
 .footer {
-  height: 85px;
+  height: 90px;
   bottom: 0;
-  background-color: #666666; }
+  background-color: #3FADA8; }
 
 @media screen and (max-width: 800px) {
   .container {

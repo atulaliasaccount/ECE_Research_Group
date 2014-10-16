@@ -5,6 +5,7 @@
          <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Roboto:500,700,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="./css/stylesheet2.css">
+        <link rel="stylesheet" type="text/css" href="./css/slider_stylesheet.css">
     </head>
     <body>
         <div class = "container">
@@ -16,14 +17,30 @@
                 <ul>
                     <li><a href = "#">Home</a></li><li><a href = "#" >Research</a>
                     <ul><li><a href = "#">Research Group 2</a></li><br><li><a href = "#">Research Group 2</a></li><br><li><a href = "#">Research Group 2</a></li><br><li><a href = "#">Research Group 2</a></li></ul>
-                    </li><li><a href = "#">News</a></li><li>People<ul><li><a href = "#">Faculty</a></li><br><li><a href = "#">Students</a></li></ul></li><li><a href="">About</a></li>
+                    </li><li><a href = "#">News</a></li><li><a href="#">People</a><ul><li><a href = "#">Faculty</a></li><br><li><a href = "#">Students</a></li></ul></li><li><a href="">About</a></li>
 
                 </ul>
             </div>
-            <div class = "theBody"></div>
-            <div class = "footer"></div>
+            <div class = "theBody">
+                <div class="rslides_container" class="slider" id="home">
+            <ul class="rslides" id="slider1">
+                <li><img src="./images/5.jpg" alt=""></li>
+                <li><img src="./images/1.jpg" alt=""></li>
+                <li><img src="./images/3.jpg" alt=""></li>
+                <li><img src="./images/4.jpg" alt=""></li>
+            </ul></div>
+                <div class = "q_links_box"><div>QuickLinks</div><div class = "quickLinks"></div></div>
+                    <div class = "currNews"></div>
+                    <div class = "currEvents"></div>
+                    <div class = "currAwards"></div>
         </div>
-        <script src="./js/jQuery.js"></script>
+            <div class = "footer"></div>
+            </div>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="./js/myJs.js"></script>
+        <script src="./js/responsiveslides.min.js"></script>
+
     </body>
 </html>
