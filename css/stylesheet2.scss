@@ -16,8 +16,8 @@ $height_header: 85px;
     padding : 0;
     margin : 0;
     border: none;
-    font-family: $font_stack;
-    font-weight: 400;
+    font-family: $font_stack !important;
+    font-weight: 400 ;
 
 }
 
@@ -45,13 +45,14 @@ $height_header: 85px;
     }
 
         div{
+            text-align: center;
             display: block;
-            position: absolute;
-            right: 0;
-            height: $height_header;
-            line-height: $height_header;
-            padding-left: 5px;
-            margin: 0 15px ;
+            width: 60%;
+            position: relative;
+            float:right;
+            margin-top: 29px;
+
+//            margin: 0 15px ;
 //            box-shadow: -1px 1px 0px #fff;
         }
 
@@ -59,10 +60,9 @@ $height_header: 85px;
 .menu{
 
     width: 100%;
-
+    font-weight: 200;
     ul{
-        margin: 0;
-        padding: 0;
+
         cursor: context-menu;
 
 
@@ -71,8 +71,8 @@ $height_header: 85px;
         margin: 1px 0px;
         display: inline-block;
         width: 20%;
-        font-size: 16px;
-        font-weight: 100 !important;
+        font-size: 16px ;
+
 
         color: #fff;
         text-align: center;
@@ -87,27 +87,32 @@ background: linear-gradient(to bottom, rgba(128,128,128,1) 0%, rgba(128,128,128,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#333333', GradientType=0 );
     }
 
-    ul li:nth-child(5n+2):hover ul{display: block;}
+
     ul li:nth-child(n+1){
     //border-right: 1px solid #fff;
           box-shadow: 1px 0px 1px 1px #fff;
 
 
     }
-
-
-}
-.resDropdown{
+    ul li ul{
 
             display: none;
           position: absolute;
            z-index: 50;
 
+
         li{
+            font-size: 14px ;
+            font-weight: 100;
             padding: 1px 10px;
-            width: auto !important;
+            width: 180px !important;
         }
 }
+    ul li:hover ul{display: block;}
+
+
+}
+
 
 
 a {text-decoration: none;color: #fff;}
@@ -129,3 +134,11 @@ a {text-decoration: none;color: #fff;}
     }
 
 }
+//
+//@media screen and (max-width:580px){
+//    .menu ul li{
+//
+//        height: 40px;
+//    }
+//
+//}
